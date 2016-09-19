@@ -1,0 +1,1 @@
+﻿var CoffeeType = Backbone.Model.extend({});

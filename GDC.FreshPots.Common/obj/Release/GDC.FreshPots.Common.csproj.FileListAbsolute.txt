@@ -1,0 +1,4 @@
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Common\bin\Release\GDC.FreshPots.Common.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Common\bin\Release\GDC.FreshPots.Common.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Common\obj\Release\GDC.FreshPots.Common.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Common\obj\Release\GDC.FreshPots.Common.pdb

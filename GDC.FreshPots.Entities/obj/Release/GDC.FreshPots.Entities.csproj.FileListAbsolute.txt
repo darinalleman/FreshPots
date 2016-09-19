@@ -1,0 +1,5 @@
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Entities\bin\Release\GDC.FreshPots.Entities.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Entities\bin\Release\GDC.FreshPots.Entities.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Entities\bin\Release\Newtonsoft.Json.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Entities\obj\Release\GDC.FreshPots.Entities.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Entities\obj\Release\GDC.FreshPots.Entities.pdb

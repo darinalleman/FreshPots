@@ -1,0 +1,57 @@
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.csprojResolveAssemblyReference.cache
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\Users\gdc\Desktop\CurrentProjects\2.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.csprojResolveAssemblyReference.cache
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\Users\gdc\Desktop\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Documents\Visual Studio 2010\Projects\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\Users\gdc\Documents\Project\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\inetpub\wwwroot\CurrentProjects\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\inetpub\wwwroot\NewFreshPots\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.csprojResolveAssemblyReference.cache
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\1.0\FreshPots\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Data.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\bin\Debug\Newtonsoft.Json.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\bin\Debug\GDC.FreshPots.Entities.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.csprojResolveAssemblyReference.cache
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Data\obj\Debug\GDC.FreshPots.Data.pdb

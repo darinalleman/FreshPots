@@ -1,0 +1,247 @@
+﻿@{
+    ViewBag.Title = "Fresh Pots";
+}
+
+
+<div id="st-container" class="st-container" >
+
+    <div class="st-pusher">
+    
+        <nav class="st-menu st-effect-6" id="menu-6" style="background: #bdafae">
+            <h2><a id="settingsLogo" style="color: #3e2c2c" class="logoSend" href="https://www.youtube.com/watch?v=fhdCslFcKFU"><u>FreshPots Settings</u></a></h2>
+            @*List of settings buttons withing the sidebar*@
+            <div>
+                <ul>
+                    <li><a onclick="notes()" id="instr" style="box-shadow: inset 0 -1px; color: #3d2622; font: coffeeFont; text-transform: uppercase; text-align: center;">Developer Notes</a></li>
+                    <li><a onclick="instructions()" id="instr" style="box-shadow: inset 0 -1px; color: #3d2622; font: coffeeFont; text-transform: uppercase; text-align: center;">Instructions</a></li>
+                    <li><a onclick="addCoffeeType()" id="newType" style="box-shadow: inset 0 -1px; color: #3d2622; font: coffeeFont; text-transform: uppercase; text-align: center;">Create New Coffee Type</a></li>
+                    <li><a onclick="deleteCoffeeType()" id="delType" style="box-shadow: inset 0 -1px; color: #3d2622; font: coffeeFont; text-transform: uppercase; text-align: center;">Delete Coffee Type</a></li>
+                </ul>
+            </div>
+            @*Developers Notes*@
+            <script>
+                    function notes() {
+                        alert("For best use of applications:\n\n" + 
+
+                               "-Google Chrome\n\n" +
+                               
+                               "-Mozilla Fire Fox\n\n" + 
+                               
+                               "-IE Edge, 11, 10\n\n" +
+                               
+                               "-Opera\n")
+                    }
+                </script>
+            @*The instructions javascript within the sidebar*@
+           <script>
+                    function instructions() {
+                        alert("Add a new pot using either of the brew buttons on the main screen.\n" + 
+
+                                "A fresh pot will go in the lower left. If a pot is already there, it gets pushed to the upper or lower right locations automagically. \n" + 
+
+                                "The timer will be red when the coffee is not fully brewed yet, or it is old and expired. \n" +
+
+                                "\n" +
+
+                                "Enjoy the Fresh Pots! ")
+                    }
+                </script>
+
+            @*The create a type javascript within the side bar*@
+
+            <script type="text/javascript">
+                function addCoffeeType() {
+                    var newType = prompt("Please enter the name of the new coffee type");
+                    var FreshPotHubProxy = $.connection.FreshPotHub;
+
+                    if (newType.length > 20) {
+                        alert("Type name is too long. Please choose a shorter name.");
+                    }
+                    else if (newType != "") {
+                        FreshPotHubProxy.server.AddCoffeeType(newType).done(function () {
+                            console.log('Invocation of AddCoffeeType succeeded');
+                        }).fail(function (error) {
+                            console.log('Invocation of AddCoffeeType failed. Error: ' + error);
+                        });
+                        alert(newType + " added.");
+                        this.value = "";
+                    }
+                }
+            </script>
+
+            @*The Delete a coffee type javascript within the side bar*@
+
+            <script type="text/javascript">
+
+                jQuery.fn.visible = function () {
+                    return this.css('visibility', 'visible');
+                };
+
+                jQuery.fn.invisible = function () {
+                    return this.css('visibility', 'hidden');
+                };
+
+                jQuery.fn.visibilityToggle = function () {
+                    return this.css('visibility', function (i, visibility) {
+                        return (visibility == 'visible') ? 'hidden' : 'visible';
+                    });
+                };
+                var counter = 0;
+                function deleteCoffeeType() {
+
+                    if (counter == 0) {
+                        var div = $('#coffeeType');
+                        var clone = div.clone(true, true);
+                        //var clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
+                        clone.id = "coffeeType2";
+                        $(clone).attr("id", "coffeeType2");
+                        clone.unbind();
+                        $("#menu-6").append(clone);
+                        clone.css('height', '5%');
+                        clone.css('width', '68%');
+                        clone.css('overflow-y', 'hidden');
+                        $("#coffeeType2").visible();
+                        $("#coffeeType2 option").filter(function () {
+                            var $this = $(this);
+                            return $this.text() == "Regular" || $this.text() == "Empty";
+                        }).remove();
+                        counter = 2;
+                    }
+                    else if (counter == 1) {
+
+                        $("#coffeeType2").visible();
+                        counter = 2;
+                    }
+                    else if (counter == 2) {
+                        $("#coffeeType2").invisible();
+                        counter = 1;
+                    }
+                    $(function () {
+
+                        $("#coffeeType2").change(function () {
+                            var selection = $("#coffeeType2 option:selected").text();
+                            if (selection != "Please select type") {
+                                if (confirm("Are you sure you want to delete " + selection + "?\nPlease make sure there are no active coffee pots with this type before deletion.")) {
+                                    console.log("Deleting " + selection);
+                                    var FreshPotHubProxy = $.connection.FreshPotHub;
+                                    FreshPotHubProxy.server.DeleteCoffeeType(selection).done(function () {
+                                        console.log('Invocation of DeleteCoffeeType succeeded');
+                                    }).fail(function (error) {
+                                        console.log('Invocation of DeleteCoffeeType failed. Error: ' + error);
+                                    });
+                                }
+                                $("#coffeeType2").invisible();
+                                this.value = "";
+                            }
+                        })
+                    });
+                }
+            </script>
+
+
+        </nav>
+
+
+
+        @*This is the 3 pot templates for upper, lower left and right*@
+
+
+        <div class="row" id="row1">
+            @*container for the sidebar button*@
+            <div id="st-trigger-effects">
+                <button id="sideBarSettingsButton" class="sideBarButton" data-effect="st-effect-6" style="text-align: right; overflow: visible; background: #3d2622; font: coffeeFont; margin-left: 17px; display: block;">Settings</button>
+            </div>
+            @*Upper container*@
+            <div id="Upper">
+                <script id="potTemplate" type="text/x-handlebars-template">
+                    <div class="col-xs-6 col-s-6 col-md-6 pot-style">
+                        <br />
+                        <br />
+                        <div class="header">
+                            <dtitle>{{type}}</dtitle>
+                        </div>
+                        <div class="image">
+                            <img src="{{ImageSource seconds}}" />
+                        </div>
+                        <div class="{{TimerClass seconds}}">
+                            <input class="btn-close" type="image" id="deleteButton" src="img/x.png" />
+                            <p>{{Timer seconds}} </p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            @*Addpot container*@
+            <div id="addPot">
+                <script type="text/javascript">
+                    function playFreshPots() {
+                        var audio = new Audio("/FreshPots/img/FreshPotsAudio.wav");
+                        audio.play();
+                    }
+                </script>
+                <script id="addPotTemplate" type="text/x-handlebars-template">
+                    <div id="addPotStyleTemplate" class="col-xs-6 col-s-6 col-md-6 addPot-style">
+                        <h3 id="logo" style="color: #3d2622;" onclick="playFreshPots()">Fresh Pots!</h3>
+                        <button id="addNewPotButtonRegular" class="btn-default">Brew Regular</button>
+                        <br>
+                        <button id="addNewPotButtonOther" class="btn-other">Brew Other</button>
+                        <br>
+                        <div id="inputDiv" style="visibility:hidden;">
+                            <br>
+                            <div id="coffeeTypeDropdown">
+                            </div>
+                        </div>
+                    </div>
+                </script>
+                <script id="coffeeTypeDropdownTemplate" type="text/x-handlebars-template">
+                    <select class="form-control" style="width:60%; height:16%; margin:0 auto; font: 900; font-size: 18px;" id="coffeeType">
+                        <option value="">Please select type</option>
+                        {{#each coffeeTypes}}
+                        <option>{{TextValue}}</option>{{/each}}
+                    </select>
+                </script>
+            </div>
+        </div>
+        @*Lower left and right container*@
+        <div class="row" id="row2">
+            <div id="LowerLeft">
+                <script id="potTemplate" type="text/x-handlebars-template">
+                    <div class="col-xs-6 col-s-6 col-md-6 pot-style">
+                        <br />
+                        <br />
+                        <div class="header">
+                            <dtitle>{{type}}</dtitle>
+                        </div>
+                        <div class="image">
+                            <img src="{{ImageSource seconds}}" />
+                        </div>
+                        <div class="{{TimerClass seconds}}">
+                            <input class="btn-close" type="image" id="deleteButton" src="img/x.png" />
+                            <p>{{Timer seconds}} </p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <div id="LowerRight">
+                <script id="potTemplate" type="text/x-handlebars-template">
+                    <div class="col-xs-6 col-s-6 col-md-6 pot-style">
+                        <br />
+                        <br />
+                        <div class="header">
+                            <dtitle>{{type}}</dtitle>
+                        </div>
+                        <div class="image">
+                            <img src="{{ImageSource seconds}}" />
+                        </div>
+                        <div class="{{TimerClass seconds}}">
+                            <input class="btn-close" type="image" id="deleteButton" src="img/x.png" />
+                            <p>{{Timer seconds}} </p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+
+    </div><!-- /st-pusher -->
+</div><!-- /st-container -->
+<script src="js/classie.js"></script>
+<script src="js/sidebarEffects.js"></script>

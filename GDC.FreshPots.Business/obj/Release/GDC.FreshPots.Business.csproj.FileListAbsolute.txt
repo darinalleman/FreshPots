@@ -1,0 +1,12 @@
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Business.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Business.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Common.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Data.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Entities.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\Newtonsoft.Json.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Common.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Data.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\bin\Release\GDC.FreshPots.Entities.pdb
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\obj\Release\GDC.FreshPots.Business.csprojResolveAssemblyReference.cache
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\obj\Release\GDC.FreshPots.Business.dll
+C:\gdc\Projects\GDC\FreshPots2\Source\branches\2.0\FreshPots\Web\GDC.FreshPots.Business\obj\Release\GDC.FreshPots.Business.pdb

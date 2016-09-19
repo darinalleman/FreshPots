@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Fresh Pots";
+}
+
+@*The container for the home/opeing page*@
+
+<div id="container" class="container">
+    <br>
+    <h3 id="logo" style="color: #3d2622; margin: 0 auto;">
+        <img src="img/fresh_pots_logo_large.png" class="logo-mainPage" />
+        <img src="img/fresh_pots_logo.png" class="logo-ipad" />
+    </h3>
+    <br>
+    <div id="coffeeSiteDropdown"></div>
+    <br>
+    <button id="createSiteButton" class="btn-SiteCreate">Create New Site</button>
+    <button id="deleteSiteButton" class="btn-deleteSite">Delete Site</button>
+    <br />
+    <div id="deleteCoffeeSiteDropdown"></div>
+    <script id="coffeeSiteDropdownTemplate" type="text/x-handlebars-template">
+        <select class="form-control" style="width:40%;min-width:200px; height:10%; border: 2px solid black; margin:0 auto; font: 900; font-size: 24px;" id="coffeeSite">
+            <option value="">Please select site</option>
+            {{#each siteList}}
+            <option value="{{Abbreviation}}/{{FloorId}}">{{SiteTextValue}} Floor {{FloorId}}</option>{{/each}}
+        </select>
+    </script>
+    <script id="deleteCoffeeSiteDropdownTemplate" type="text/x-handlebars-template">
+        <select class="form-control" style="width:40%;min-width:200px; height:10%; border: 2px solid black; margin:0 auto; font: 900; font-size: 24px;" id="coffeeSite2">
+            <option value="">Please select site to delete</option>
+            {{#each siteList}}
+            <option value="{{Abbreviation}}/{{FloorId}}">{{SiteTextValue}} Floor {{FloorId}}</option>{{/each}}
+        </select>
+    </script>
+    <button id="adminSettingsButton" class="btn-admin">Admin Settings</button>
+</div>
+
+@*The container content that will hold the pots and sidebar effects*@
+
+<div id="st-container" class="st-container">
+    <div class="st-pusher">
+        <nav class="st-menu st-effect-6" id="menu-6" style="background: #bdafae">
+            <h2><a id="settingsLogo" style="color: #3e2c2c" class="logoSend" href="https://www.youtube.com/watch?v=fhdCslFcKFU"><u>FreshPots Settings</u></a></h2>
+            @*List of settings buttons withing the sidebar*@
+            <div>
+                <ul id="settingsList">
+                    <li><a id="notes" onclick="notes()" style="box-shadow: inset 0 -1px; color: #3d2622; font: coffeeFont; text-transform: uppercase; text-align: center;">Developer Notes</a></li>
+                    <li><a id="instr" onclick="instructions()" style=" box-shadow: inset 0 -1px; color: #3d2622; font: coffeefont; text-transform: uppercase; text-align: center;">Instructions</a></li>
+                    <li><a id="newType" onclick="addCoffeeType()" style=" box-shadow: inset 0 -1px; color: #3d2622; font: coffeefont; text-transform: uppercase; text-align: center;">Create New Coffee Type</a></li>
+                    <li><a id="delType" onclick="deleteCoffeeType()" style=" border-bottom: 1px solid black; box-shadow: inset 0 -1px; color: #3d2622; font: coffeefont; text-transform: uppercase; text-align: center;">Delete Coffee Type</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <script type="text/javascript">
+        function playFreshPots() {
+            console.log("Playing");
+            var audio = new Audio("/FreshPots/img/FreshPotsAudio.wav");
+            audio.play();
+        }
+    </script>
+
+
+        @*This is the 3 pot templates for upper, lower left and right*@
+        <script id="potTemplate" type="text/x-handlebars-template">
+            <div class="col-xs-6 col-s-6 col-md-6 pot-style">
+                <br />
+                <br />
+                <div class="header">
+                    <dtitle>{{TypeClass TypeTextValue}}</dtitle>
+                </div>
+                <div class="image">
+                    <img src="{{ImageSource seconds}}" />
+                </div>
+                <div class="{{TimerClass seconds}}">
+                    <input class="btn-close{{DeleteButtonClass TypeTextValue}}" type="image" id="deleteButton" src="img/X.png" />
+                    <p>{{Timer seconds}}</p>
+                </div>
+            </div>
+        </script>
+        @*This is the template for the addpot container*@
+        <script id="addPotTemplate" type="text/x-handlebars-template">
+            <div id="addPotStyleTemplate" class="col-xs-6 col-s-6 col-md-6 addPot-style">
+                <div id="logo" class="logo" style="color: #3d2622;" onclick="playFreshPots()">
+                    <img src="img/fresh_pots_logo_apv.png" class="logo-desktop" />
+                    <img src="img/fresh_pots_logo_apv.png" class="logo-ipad" />
+                </div>
+                <div id="siteTextDiv">
+                    <p style="font-size:26px;margin-top:2%;">{{site}}</p>
+                </div>
+                <button id="addNewPotButtonRegular" class="btn-default">Brew Regular</button>
+                <br />
+                <button id="addNewPotButtonOther" class="btn-other">Brew Other</button>
+                <div id="inputDiv" style="visibility:hidden;">
+                    <div id="coffeeTypeDropdown">
+                    </div>
+                </div>
+            </div>
+        </script>
+        @*This is the template for the coffeetype dropdowns*@
+        <script id="coffeeTypeDropdownTemplate" type="text/x-handlebars-template">
+            <select class="form-control" style="width:60%; height:16%; margin:0 auto; font: 900; font-size: 18px;" id="coffeeType">
+                <option value="">Please select type</option>
+                {{#each coffeeTypes}}
+                <option>{{TextValue}}</option>{{/each}}
+            </select>
+        </script>
+
+        <div class="row" id="row1">
+            @*container for the sidebar button*@
+            <div id="st-trigger-effects">
+                <button id="sideBarSettingsButton" class="sideBarButton" data-effect="st-effect-6" style="text-align: right; overflow: visible; background: #3d2622; font: coffeeFont; margin-left: 17px; display: block;">Settings</button>
+            </div>
+            @*Upper container*@
+            <div id="Upper"></div>
+            @*Addpot container*@
+            <div id="addPot"></div>
+        </div>
+        @*Lower left and right container*@
+        <div class="row" id="row2">
+            <div id="LowerLeft"></div>
+            <div id="LowerRight"></div>
+        </div>
+    </div><!-- /st-pusher -->
+</div><!-- /st-container -->
+<script src="js/classie.js"></script>
+<script src="js/sidebarEffects.js"></script>
+
+
+

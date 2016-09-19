@@ -1,0 +1,1 @@
+﻿var CoffeePot = Backbone.Model.extend({});

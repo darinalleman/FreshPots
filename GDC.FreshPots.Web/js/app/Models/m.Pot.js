@@ -1,0 +1,1 @@
+var Pot = Backbone.Model.extend({});

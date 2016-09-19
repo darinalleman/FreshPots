@@ -1,0 +1,634 @@
+*,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+
+.st-content {
+	overflow: hidden;
+	background: #808080;
+ 
+}
+
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+
+/*IPad Portrait Css, for on screen sizing*/
+@media only screen and (min-device-width : 750px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .st-container {
+        position: relative;
+        overflow: hidden;
+        width: 775px;
+        height: 980px;
+        background: #808080;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .addPot-style {
+        display: inline-block;
+        background-color: #808080;
+        min-width: 375px;
+        min-height: 375px;
+        text-align: center;
+        margin-left: 14px;
+        margin-right: auto;
+        margin-top: 28px;
+        font-family: coffeeFont;
+        font-size: 16px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .pot-style {
+        display: inline-block;
+        background-color: #808080;
+        background-image: url("../img/transparent-black-circle.png");
+        background-size: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 375px;
+        min-height: 375px;
+        margin-left: 14px;
+        margin-top: 25px;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 28px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .timer {
+        font-family: coffeeFont;
+        font-size: 32px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 20px;
+        left: 30px;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        padding-left: 105px;
+        padding-top: -60px;
+    }
+
+    .timer-expired {
+        font-family: coffeeFont;
+        font-size: 32px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 20px;
+        left: 30px;
+        color: #f00;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        padding-left: 105px;
+        padding-top: -60px;
+    }
+
+    .btn-close {
+        float: right;
+        position: absolute;
+        height: 100%;
+        width: 42%;
+        
+        right: 12px;
+        overflow: no-content;
+        padding-left: 95px;
+        padding-top: -30px;
+    }
+
+    .image {
+        text-align: center;
+        padding-bottom: 25px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 200px;
+        left: 15px;
+        padding-left: 10px;
+    }
+
+    .img {
+        vertical-align: central;
+    }
+}
+
+/*Resizing for landscape view on ipad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .st-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #808080;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .addPot-style {
+        display: inline-block;
+        background-color: #808080;
+        min-width: 360px;
+        min-height: 340px;
+        text-align: center;
+        margin-left: 12%;
+        margin-right: auto;
+        margin-top: -20px;
+        font-family: coffeeFont;
+        font-size: 16px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .pot-style {
+        display: inline-block;
+        background-color: #808080;
+        background-image: url("../img/transparent-black-circle.png");
+        background-size: 305px;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 360px;
+        min-height: 340px;
+        margin-left: 12%;
+        margin-top: -19px;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 1.3em;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .timer {
+        font-family: coffeeFont;
+        font-size: 32px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 30px;
+        right: 13px;
+        text-overflow: ellipsis;
+        overflow: no-content;
+    }
+
+    .timer-expired {
+        font-family: coffeeFont;
+        font-size: 32px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 30px;
+        right: 13px;
+        color: #f00;
+        text-overflow: ellipsis;
+        overflow: no-content;
+    }
+
+    .btn-close {
+        float: right;
+        position: absolute;
+        height: 100%;
+        width: 42%;
+        right: 12px;
+        overflow: no-content;
+        padding-left: 95px;
+        padding-top: -30px;
+        display: none;
+    }
+
+    .image {
+        text-align: center;
+        padding-bottom: 25px;
+        position: absolute;
+        height: 15%;
+        width: 91%;
+        bottom: 200px;
+        left: 15px;
+        padding-left: 10px;
+    }
+
+    .img {
+        vertical-align: central;
+    }
+}
+
+
+/*Desktop and laptop Css, for on screen sizing*/
+@media only screen and (min-device-width : 1025px) {
+    .st-container {
+        position: relative;
+        overflow: hidden;
+        width: 108vh;
+        height: 100%;
+        background: #808080;
+        max-width: 100%;
+        max-height: 100%;
+        padding-left: 4%;
+        margin-left:auto;
+        margin-right:auto;
+        align-content: center;
+        float: none;
+    }
+
+    .addPot-style {
+        display: inline-block;
+        background-color: #808080;
+        min-width: 390px;
+        min-height: 390px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 16px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .pot-style {
+        display: inline-block;
+        background-color: #808080;
+        background-image: url("../img/transparent-black-circle.png");
+        background-size: 380px;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 390px;
+        min-height: 390px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 25px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .timer {
+        font-family: coffeeFont;
+        font-size: 1.5em;
+        position: absolute;
+        bottom: 30px;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    .timer-expired {
+        font-family: coffeeFont;
+        font-size: 1.5em;
+        position: absolute;
+        bottom: 30px;
+        color: #f00;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        left: 50%;
+        margin-left: -65px;
+    }
+
+    .btn-close {
+        float: right;
+        position: absolute;
+        height: 65%;
+        width: 35%;
+        bottom: 13px;
+        right: 20px;
+        overflow: no-content;
+        padding-left: 105px;
+        padding-top: -60px;
+        display: none;
+    }
+
+    .image {
+        text-align: center;
+        padding-bottom: 25px;
+        position: absolute; left: 0em; right: 0em; top: 5em;
+        vertical-align: middle;
+    }
+
+    .img {
+        vertical-align: middle;
+    }
+}
+
+/*Desktop and laptop Css, for on screen sizing*/
+@media only screen and (min-device-width : 1824px) {
+    .st-container {
+        position: relative;
+        overflow: hidden;
+        width: 108vh;
+        height: 100%;
+        background: #808080;
+        max-width: 100%;
+        max-height: 100%;
+        padding-left: 4%;
+        margin-left:auto;
+        margin-right:auto;
+        align-content: center;
+        float: none;
+    }
+
+    .addPot-style {
+        display: block;
+        background-color: #808080;
+        min-width: 455px;
+        min-height: 455px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 16px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+    .pot-style {
+        display: block;
+        background-color: #808080;
+        background-image: url("../img/transparent-black-circle.png");
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 455px;
+        min-height: 455px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: coffeeFont;
+        font-size: 25px;
+        color: #3d2622;
+        height: auto;
+        width: auto;
+    }
+
+      .timer {
+        font-family: coffeeFont;
+        font-size: 1.5em;
+        position: absolute;
+        bottom: 30px;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        left: 50%;
+        margin-left: -65px;
+    }
+
+    .timer-expired {
+        font-family: coffeeFont;
+        font-size: 1.5em;
+        position: absolute;
+        bottom: 30px;
+        color: #f00;
+        text-overflow: ellipsis;
+        overflow: no-content;
+        left: 50%;
+        margin-left: -65px;
+    }
+
+
+    .btn-close {
+        float: right;
+        position: absolute;
+        height: 65%;
+        width: 35%;
+        bottom: 13px;
+        right: 20px;
+        overflow: no-content;
+        padding-left: 105px;
+        padding-top: -60px;
+        display: none;
+    }
+    
+    .image {
+        text-align: center;
+        padding-bottom: 25px;
+        position: absolute; left: 0em; right: 0em; top: 6em;
+        vertical-align: middle;
+    }
+
+    .img {
+        vertical-align: middle;
+    }
+}
+
+.st-pusher {
+	position: relative;
+	z-index: 99;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 300px;
+	height: 100%;
+	background: #48a770;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* content style */
+
+.st-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    border-top: 1px solid black;
+}
+
+.st-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: bold;
+	font-size: 2.5em;
+    text-align: center;
+}
+
+.st-menu ul li a {
+	display: block;
+	padding: 1em 1em 1em 1.2em;
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	letter-spacing: 1px;
+	font-weight: 600;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+    border-bottom: 1px solid black;
+}
+
+.st-menu ul li:first-child a {
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
+    
+}
+
+.st-menu ul li a:hover {
+	background: #fff;
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	color: black;
+}
+
+.btn-other:hover{
+    background: #fff;
+    color: black;
+}
+
+/* Individual effects */
+
+/* Effect 6: Rotate pusher */
+
+.st-effect-6.st-container {
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+}
+
+.st-effect-6 .st-pusher {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.st-effect-6.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(300px, 0, 0) rotateY(-15deg);
+	transform: translate3d(300px, 0, 0) rotateY(-15deg);
+}
+
+.st-effect-6.st-menu {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.st-effect-6.st-menu-open .st-effect-6.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(-100%, 0, 0) rotateY(15deg);
+	transform: translate3d(-100%, 0, 0) rotateY(15deg);
+}
+
+.st-effect-6.st-menu::after {
+	display: none;
+}
+
+.btn-default{
+    vertical-align: middle; 
+    width: 180px;
+    height: 50px;
+    text-align: center; 
+    background: #3d2622;
+    color: #fff;
+    display: none;
+}
+
+.btn-other {
+    vertical-align: middle; 
+    width: 180px;
+    height: 50px;
+    text-align: center; 
+    background: #3d2622;
+    color: #fff;
+    display: none;
+}
+
+.addPot-style h3 {
+	padding: 1em;
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.header{
+    text-align:center;
+    width: 100%;
+    height: 6vh;
+}
+
+@font-face {
+    font-family: coffeeFont;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .st-pusher,
+.no-js .st-pusher {
+	padding-left: 300px;
+}
